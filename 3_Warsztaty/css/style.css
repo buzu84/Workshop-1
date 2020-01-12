@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 1352px;;
+  margin: 0 auto;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, .2);;
+  padding: 13px;
+}
+
+nav > ul > li {
+  display: inline;
+}
+
+li > a, h1 > a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+.menu li a {
+  text-transform: uppercase;
+  color: gray;
+}
+
+li:hover a {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+.open_shop {
+  background-image: url(../assets/Background.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.landing_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing_content > h1{
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.landing_content > p {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.CTAbtn {
+  display: inline-block;
+  cursor: pointer;
+  border-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: lightblue;
+  border-radius: 35px;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+}
+
+.facts_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.facts {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+div.news_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.news_item::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: pink;
+  padding: 20px;
+}
+
+.news_item img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  top: 25%;
+}
+
+.news_item > p, .news_item > h3 {
+  padding: 20px;
+}
